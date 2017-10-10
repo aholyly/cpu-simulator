@@ -1,0 +1,219 @@
+Last login: Wed Nov 16 20:24:49 on ttys000
+Ahmet-Mac-mini:~ ahmet$ cd Desktop/OneDrive/C++/hw5/hw5
+Ahmet-Mac-mini:hw5 ahmet$ make clean
+rm *.o exe
+Ahmet-Mac-mini:hw5 ahmet$ make
+g++ -c -std=c++11 _mainTester.cpp
+g++ -c -std=c++11 CPUProgram.cpp
+g++ -c -std=c++11 CPU.cpp
+g++ -c -std=c++11 Memory.cpp
+g++ -c -std=c++11 Computer.cpp
+g++ _mainTester.o CPUProgram.o CPU.o Memory.o Computer.o -o exe
+Ahmet-Mac-mini:hw5 ahmet$ ./exe sorting.txt 0
+-------
+MOV #0, 30
+HLT
+-------
+MOV R1, #45
+-------
+MOV R2, #50
+-------
+MOV #0, 30
+MOV #1, 23
+MOV #2, 4
+MOV #3, 56
+MOV #4, 34
+MOV #5, 56
+MOV #6, 89
+MOV #7, 32
+MOV #8, 45
+MOV #9, 25
+MOV R3, 10
+MOV #0, R1
+SUB R1, #1
+JPN R1, 19
+MOV #0, R4
+MOV #1, R5
+MOV R5, #0
+MOV R4, #1
+MOV #1, R1
+SUB R1, #2
+JPN R1, 26
+MOV #1, R4
+MOV #2, R5
+MOV R5, #1
+MOV R4, #2
+MOV #2, R1
+SUB R1, #3
+JPN R1, 33
+MOV #2, R4
+MOV #3, R5
+MOV R5, #2
+MOV R4, #3
+MOV #3, R1
+SUB R1, #4
+JPN R1, 40
+MOV #3, R4
+MOV #4, R5
+MOV R5, #3
+MOV R4, #4
+MOV #4, R1
+SUB R1, #5
+JPN R1, 47
+MOV #4, R4
+MOV #5, R5
+MOV R5, #4
+MOV R4, #5
+MOV #5, R1
+SUB R1, #6
+JPN R1, 54
+MOV #5, R4
+MOV #6, R5
+MOV R5, #5
+MOV R4, #6
+MOV #6, R1
+SUB R1, #7
+JPN R1, 61
+MOV #6, R4
+MOV #7, R5
+MOV R5, #6
+MOV R4, #7
+MOV #7, R1
+SUB R1, #8
+JPN R1, 68
+MOV #7, R4
+MOV #8, R5
+MOV R5, #7
+MOV R4, #8
+MOV #8, R1
+SUB R1, #9
+JPN R1, 75
+MOV #8, R4
+MOV #9, R5
+MOV R5, #8
+MOV R4, #9
+SUB R3, 1
+JMP R3, 78
+JMP 12
+PRN #0
+PRN #1
+PRN #2
+PRN #3
+PRN #4
+PRN #5
+PRN #6
+PRN #7
+PRN #8
+PRN #9
+HLT
+MOV R2, #50
+MOV #0, 30
+MOV #1, 23
+MOV #2, 4
+MOV #3, 56
+MOV #4, 34
+MOV #5, 56
+MOV #6, 89
+MOV #7, 32
+MOV #8, 45
+MOV #9, 25
+MOV R3, 10
+MOV #0, R1
+SUB R1, #1
+JPN R1, 19
+MOV #0, R4
+MOV #1, R5
+MOV R5, #0
+MOV R4, #1
+MOV #1, R1
+SUB R1, #2
+JPN R1, 26
+MOV #1, R4
+MOV #2, R5
+MOV R5, #1
+MOV R4, #2
+MOV #2, R1
+SUB R1, #3
+JPN R1, 33
+MOV #2, R4
+MOV #3, R5
+MOV R5, #2
+MOV R4, #3
+MOV #3, R1
+SUB R1, #4
+JPN R1, 40
+MOV #3, R4
+MOV #4, R5
+MOV R5, #3
+MOV R4, #4
+MOV #4, R1
+SUB R1, #5
+JPN R1, 47
+MOV #4, R4
+MOV #5, R5
+MOV R5, #4
+MOV R4, #5
+MOV #5, R1
+SUB R1, #6
+JPN R1, 54
+MOV #5, R4
+MOV #6, R5
+MOV R5, #5
+MOV R4, #6
+MOV #6, R1
+SUB R1, #7
+JPN R1, 61
+MOV #6, R4
+MOV #7, R5
+MOV R5, #6
+MOV R4, #7
+MOV #7, R1
+SUB R1, #8
+JPN R1, 68
+MOV #7, R4
+MOV #8, R5
+MOV R5, #7
+MOV R4, #8
+MOV #8, R1
+SUB R1, #9
+JPN R1, 75
+MOV #8, R4
+MOV #9, R5
+MOV R5, #8
+MOV R4, #9
+SUB R3, 1
+JMP R3, 78
+JMP 12
+PRN #0
+PRN #1
+PRN #2
+PRN #3
+PRN #4
+PRN #5
+PRN #6
+PRN #7
+PRN #8
+PRN #9
+HLT
+-------
+FAIL
+FAIL
+FAIL
+-------
+DONE
+DONE
+DONE
+-------
+MOV #5, 56
+MOV #6, 89
+MOV #7, 32
+MOV #8, 45
+MOV #9, 25
+MOV R3, 10
+-------
+YOU ARE OUT OF LINES
+ERROR
+NO ENTERED INSTRUCTION FOUND
+HLT
+-------
+Ahmet-Mac-mini:hw5 ahmet$ 

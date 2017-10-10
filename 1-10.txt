@@ -1,0 +1,14 @@
+mov r1,1 	; r1'e ilk değer atandı
+mov r2,10 	; r2'ye son değer atandı
+MOV R3 ,R2 	; r3 dongu kontrol degiskeni
+sub r3 ,1 	; kontrol elemanı 1 azaltılır
+ADD R4 ,R2 	; r4 toplam değer. her döngüde sayı kadar artmakta.
+JMP R3 ,9 	; r3 0 olursa, döngüden çıkar
+SUB R3 ,1	; döngü devam ediyorsa r3 1 azaltılır
+JMP 5		; döngüye geri döner
+sub r2 ,1	; son değer 1 azaltılır
+jmp r2, 13	; eğer son değer 0 olmuşsa programdan çıkar
+mov r3 ,r2 	; r3'ye yeni değer atanır
+jmp 4 		; döngüye geri döner
+PRN r4 		; toplam degeri ekrana basar
+HLT			; programi bitirir
